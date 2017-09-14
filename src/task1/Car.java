@@ -13,12 +13,14 @@ public class Car {
     private String make;
     private int year;
     private String color;
+    private String model;
     private boolean engineOn;
 
-    public Car(String make, int year, String color) {
+    public Car(String make, int year, String color, String model) {
         this.make = make;
         this.year = year;
         this.color = color;
+        this.model = model;
     }
 
     public String getMake() {
@@ -43,6 +45,14 @@ public class Car {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
     }
     
     public void turnOnEngine(){

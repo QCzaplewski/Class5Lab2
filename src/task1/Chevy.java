@@ -10,18 +10,8 @@ package task1;
  * @author Quinten
  */
 public class Chevy extends Car{
-    private String model;
-    public Chevy(int year, String color, String model) {
-        super("Chevy", year, color);
-        this.model = model;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
     
+    public Chevy(int year, String color, String model) {
+        super("Chevy", year, color, model);
+    }
 }
