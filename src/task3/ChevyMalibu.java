@@ -50,6 +50,9 @@ public class ChevyMalibu implements Chevy{
 
     @Override
     public void setYear(int year) {
+        if(year < 1913 || year > 2018){
+            throw new IllegalArgumentException("Value must be greater than 0 and less than 150");
+        }
         this.year = year;
     }
 
