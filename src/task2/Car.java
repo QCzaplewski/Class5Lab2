@@ -10,5 +10,8 @@ package task2;
  * @author Quinten
  */
 public abstract class Car {
+    public abstract void turnOnEngine();
+    
+    public abstract void turnOffEngine();
     
 }

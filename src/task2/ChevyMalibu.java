@@ -10,5 +10,7 @@ package task2;
  * @author Quinten
  */
 public class ChevyMalibu extends Chevy{
-
+    public ChevyMalibu(int year, String color) {
+        super("Malibu", year, color);
+    }
 }
