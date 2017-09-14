@@ -11,7 +11,6 @@ package task2;
  */
 public abstract class Car {
     public abstract void turnOnEngine();
-    
     public abstract void turnOffEngine();
     
 }

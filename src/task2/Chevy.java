@@ -28,6 +28,9 @@ public class Chevy extends Car{
     }
 
     public void setMake(String make) {
+        if(make.isEmpty()){
+            throw new IllegalArgumentException("Value must be filled");
+        }
         this.make = make;
     }
 
@@ -36,6 +39,9 @@ public class Chevy extends Car{
     }
 
     public void setModel(String model) {
+        if(make.isEmpty()){
+            throw new IllegalArgumentException("Value must be filled");
+        }
         this.model = model;
     }
 
@@ -45,7 +51,7 @@ public class Chevy extends Car{
 
     public void setYear(int year) {
         if(year < 1913 || year > 2018){
-            throw new IllegalArgumentException("Value must be greater than 0 and less than 150");
+            throw new IllegalArgumentException("Value must be a valid year");
         }
         this.year = year;
     }
@@ -55,6 +61,9 @@ public class Chevy extends Car{
     }
 
     public void setColor(String color) {
+        if(make.isEmpty()){
+            throw new IllegalArgumentException("Value must be filled");
+        }
         this.color = color;
     } 
     
